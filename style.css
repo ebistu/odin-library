@@ -1,0 +1,128 @@
+
+body {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px;
+    background-color: rgb(192, 207, 192);
+    
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+
+#header-text {
+    font-size: 2.5rem;
+    margin: 0px;
+    color: rgb(120, 70, 70);
+    margin-left: 20px;
+}
+
+p {
+    color: rgb(120,70,70);
+}
+
+#add-book {
+    grid-column: 3/4;
+    width: 90px;
+    height: 30px;
+    border-radius: 10px;
+
+    margin-left: 10vh;
+}
+
+#book-item-read-button {
+    width: 60px;
+    height: 20px;
+    border-radius: 6px;
+}
+
+
+
+button {
+    background-color: rgb(120, 70, 70);
+
+    border: 0px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: rgb(107, 63, 63);
+}
+
+.content {
+    background-color: rgb(173, 206, 173);
+    border-radius: 30px;
+    display: grid;
+    gap: 10px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(220px,1fr));
+    box-shadow: 2px 2px 8px -4px black;
+}
+
+.book-item-text {
+    font-size: 0.9rem;
+    margin: 10px;
+}
+
+#book-item-name {
+    font-size: 1.4rem;
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+#book-item-page-amount-text {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#book-item-page-amount-value {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#book-item-read-text {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+#book-item-read-value {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.book-item-button {
+
+    grid-column: 1/3;
+    grid-row: 4/5;
+}
+
+.book-item {
+    margin: 10px;
+    border-radius: 20px;
+    background-color: rgb(192, 207, 192);
+    width: 200px;
+    height: 200px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px 40px 40px 40px;
+    box-shadow: 2px 2px 8px -4px black;
+}
+
+.book-item-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-item-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
