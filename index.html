@@ -7,21 +7,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <dialog id="dialog">
+        <form method="dialog">
+            <p>
+                <label>
+                    Book name: 
+                    <input id="input-book-name" type="text"/>
+                </label>
+                <label>
+                    Page count: 
+                    <input id="input-page-count" type="text"/>
+                </label>
+                <label>
+                    Read: 
+                    <input id="input-read" type="checkbox"/>
+                </label>
+            </p>
+            <div>
+                <input type="submit" id="dialog-close" value="Close" />
+                <input type="submit" id="dialog-submit" value="Add book"/>
+            </div>
+        </form>
+    </dialog>
     <div class="header">
         <p id="header-text">Jojo's library</p>
         <button id="add-book">Add book</button>
     </div>
-    <div class="content">
-        <div class="book-item" id="book1">
-            <p class="book-item-text" id="book-item-name">Book number 1</p>
-            <p class="book-item-text" id="book-item-page-amount-text">Pages: </p>
-            <p class="book-item-text" id="book-item-page-amount-value">500</p>
-            <p class="book-item-text" id="book-item-read-text">Read: </p>
-            <p class="book-item-text" id="book-item-read-value">Yes</p>
-            <div class="book-item-button"><button id="book-item-read-button">Read</button></div>
-        </div>
- 
- 
+    <div id="book-list">
     </div>
     <script src="app.js"></script>
 </body>

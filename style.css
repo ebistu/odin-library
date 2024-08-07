@@ -56,7 +56,7 @@ button:active {
     background-color: rgb(107, 63, 63);
 }
 
-.content {
+#book-list {
     background-color: rgb(173, 206, 173);
     border-radius: 30px;
     display: grid;
